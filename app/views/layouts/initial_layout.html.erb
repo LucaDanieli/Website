@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Luca Danieli Website - <%= yield(:title) %></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
+</head>
+<body>
+
+  <div id="logo_background">
+    <div id="logo_line">
+      <table id="header_tab">
+	<tr>
+        <td id="current_page">
+          <p><%= yield(:page) %></p>
+	</td>
+        <td id="logo_name" >
+<%= yield %>
+      </td></tr>
+      </table>
+      <%= image_tag("background.png", :alt => "decoration", id: "logo_image") %>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div id="footer_line">
+      <nav  id="footer_menu">
+      <ul>
+	<li><%= link_to "About", 	'#' %></li>
+	<li><%= link_to "Contact", 	'#' %></li>
+      </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
