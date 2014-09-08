@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<div id="tab_music">
+  <div id="menu">
+    <div id="main"><p> Artistic Media </p></div>
+    <div id="second"><p> MUSIC | Silenzi | Dramma in 4 parti | Studio secondo </p></div>
+    <div id="second"><p> VIDEO | Variations on Bruno Maderna's Notturno </p></div>
+  </div>
+  <table id="line"></table>
+</div>
+
+<div id="tab_writings">
+  <div id="menu">
+    <div id="main"><p> Writings </p></div>
+    <div id="second"><p> POEMS | Apologia della bellezza: il bacio di vancouver | La tragedia | Thoughts </p></div>
+    <div id="second"><p> THEATRE | Agatodemone e il cacodemone </p></div>
+  </div>
+  <table id="line"></table>
+</div>
+
+<div id="tab_works">
+  <div id="menu">
+    <div id="main"><p> Works </p></div>
+    <div id="second"><p> CODES | Supercollider | Processing | Websites </p></div>
+    <div id="second"><p> PUBLICATIONS </p></div>
+  </div>
+  <table id="line"></table>
+</div>
