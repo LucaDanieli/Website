@@ -1,0 +1,16 @@
+
+setElementQuality = (uom, style_item, quality, from_value) ->
+  if quality is "opacity"
+    document.getElementById(style_item).style.opacity = from_value
+    from_value
+  else if quality is "height"
+    document.getElementById(style_item).style.height = from_value.toString() + uom
+    from_value
+  else if quality is "margin-top"
+    document.getElementById(style_item).style.marginTop = from_value.toString() + uom
+    from_value
+  else if quality is "top"
+    document.getElementById(style_item).style.top = from_value.toString() + uom
+    from_value
+
+

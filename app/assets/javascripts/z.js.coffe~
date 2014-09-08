@@ -1,0 +1,21 @@
+/*
+//= require jquery
+//= require jquery_ujs
+//= require turbolinks
+//= require_tree .
+*/
+
+value_to("", 500, 10, "logo_image", "opacity", 0, 0.6, 0.005)
+value_to("", 500, 10, "logo_line", "opacity", 0, 1, 0.01)
+value_to("", 1500, 10, "header_tab", "opacity", 0, 1, 0.005)
+
+value_ellittic_to("down", "%", 4000, 10, "logo_background", "height", 95, 10, 0.01, 0.001, 5, 80)
+value_ellittic_to("up", "%", 4000, 10, "logo_line", "top", 50, 100, 0.01, 0.001, 5, 80)
+value_ellittic_to("down", "px", 4000, 10, "logo_line", "margin-top", 39, -2, 0.03, 0.001, 20, 40)
+value_to("", 5000, 10, "footer_menu", "opacity", 0, 1, 0.01)
+value_to("", 5000, 10, "current_page", "opacity", 0, 1, 0.01)
+
+value_to("", 6000, 10, "tab_biography", "opacity", 0, 0.8, 0.005)
+value_to("", 6000, 10, "tab_artistic", "opacity", 0, 0.8, 0.01)
+value_to("", 6000, 10, "tab_commercial", "opacity", 0, 0.8, 0.005)
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<header>  
+  <div id="logo_background">
+    <div id="logo_line">
+      <table id="header_tab">
+	<tr>
+        <td id="current_page">
+          <p><%= link_to 'yield(:page)', home_path %></p>
+	</td>
+        <td id="logo_name" >
+          <h1 id="logo_name">Luca Danieli</h1>
+          <p id="logo_name">Official Website</p>
+      </td></tr>
+      </table>
+      <%= image_tag("background.png", :alt => "decoration", id: "logo_image") %>
+    </div>
+  </div>
+</header>

@@ -9,32 +9,31 @@
 </head>
 <body>
 
-  <div id="logo_background">
-    <div id="logo_line">
-      <%= image_tag("background.png", :alt => "decoration", id: "logo_image") %>
-      <table id="header_tab">
-	<tr>
-        <td id="current_page">
-          <p><%= yield(:page) %></p>
-	</td>
-        <td id="logo_name" >
-<%= yield %>
-      </td></tr>
-      </table>
-        
-    </div>
-  </div>
+<div id="background_canvas">
+  <canvas id="canvas">  
+  <script>
+    draw(2000, <%= yield(:initial_draw_cycles) %>);
+  </script>
+</div>
 
-  <footer class="footer">
-    <div id="footer_line">
-      <nav  id="footer_menu">
-      <ul>
-	<li><%= link_to "About", 	'#' %></li>
-	<li><%= link_to "Contact", 	'#' %></li>
-      </ul>
-      </nav>
-    </div>
-  </footer>
+<%= image_tag("profile_image.jpg", :alt => "rss feed", id: "profile_image") %>
+
+<script>
+  image_mouse_actions();
+</script>
+
+
+
+<div id="central_menu">
+</div>
+
+<%= yield %>
+
+<%= render 'layouts/header' %>
+<%= render 'layouts/footer' %>
+
+
+
 
 </body>
 </html>

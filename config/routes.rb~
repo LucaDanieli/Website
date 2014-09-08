@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   #get 'initial_page/index'
   match '/', to: 'initial_page#index', via: 'get'
 
-  match 'home', to: 'static_pages#home', via: 'get'
+  match 'home', to 'static_pages#home', via: 'get'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,0 +1,32 @@
+
+setElementQuality = (uom, style_item, quality, from_value) ->
+  if quality is "opacity"
+    document.getElementById(style_item).style.opacity = from_value
+    from_value
+  else if quality is "height"
+    document.getElementById(style_item).style.height = from_value.toString() + uom
+    from_value
+  else if quality is "margin-top"
+    document.getElementById(style_item).style.marginTop = from_value.toString() + uom
+    from_value
+  else if quality is "top"
+    document.getElementById(style_item).style.top = from_value.toString() + uom
+    from_value
+
+
+move_values = (uom, style_item, quality, from_value, to_value, step) -> 
+  if from_value < to_value
+    from_value = from_value + step
+  else if from_value > to_value
+    from_value = from_value - step
+  setElementQuality(uom, style_item, quality, from_value)
+
+move_values_init = (uom, fps, style_item, quality, from_value, to_value, step) -> 
+  setInterval update_values = ->
+    from_value = move_values(uom, style_item, quality, from_value, to_value, step)
+  , fps
+
+value_to = (uom, time, fps, style_item, quality, from_value, to_value, step) ->
+  setTimeout update_values = ->
+    new_value = move_values_init(uom, fps, style_item, quality, from_value, to_value, step)
+  , time
